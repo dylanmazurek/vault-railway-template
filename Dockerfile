@@ -12,6 +12,6 @@ ENV VAULT_ADDR="http://localhost:$PORT"
 COPY vault.tmpl.json /vault/config/vault.tmpl.json
 COPY init.sh /vault/init.sh
 
-EXPOSE 8200
+EXPOSE $PORT
 
 CMD [ "/bin/sh", "/vault/init.sh" ]
