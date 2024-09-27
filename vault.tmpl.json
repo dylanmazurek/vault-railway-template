@@ -1,0 +1,19 @@
+{
+  "storage": [
+    {
+      "file": {
+        "path": "$FILE_PATH"
+      }
+    }
+  ],
+  "listener": [
+    {
+      "tcp": {
+        "address": "[::]:$PORT",
+        "tls_disable": "1"
+      }
+    }
+  ],
+  "ui": true,
+  "disable_mlock": true
+}
